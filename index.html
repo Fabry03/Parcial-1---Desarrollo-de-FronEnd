@@ -6,57 +6,60 @@
   <title>Wayne Tech Enterprise</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
   <header class="topbar">
     <div class="brand">
-    <img src="logo.png" alt="Logo de Wayne Tech" width="70" height="50">
+      <img src="logo.png" alt="Logo de Wayne Tech" width="70" height="50">
       <h1 class="brand__name">Wayne Tech</h1>
     </div>
-
     <form class="search" role="search">
       <label for="search-input" class="sr-only">Buscar productos</label>
-      <input id="search-input" type="search" name="q" placeholder="Buscar">
-      <button type="submit" style="border: 1px solid #d2b301;">Buscar</button>
+      <input id="search-input" type="search" name="q" placeholder="Buscar equipo táctico">
+      <button type="submit">Buscar</button>
     </form>
   </header>
 
-  <div class="categories" aria-label="Categorías de productos">
-    <a class="category" href="#batimoviles"style="border: 1px solid #d2b301;">Batimóviles</a>
-        <a class="category" href="#batimotos" style="border: 1px solid #d2b301;">Batimotos</a>
-    <a class="category" href="#batiala"style="border: 1px solid #d2b301;">Batiala</a>
-    <a class="category" href="#batiaccesorios"style="border: 1px solid #d2b301;">Batiaccesorios</a>
-  </div>
+  <nav class="categories" aria-label="Categorías de productos">
+    <a class="category" href="#productos">Batimóviles</a>
+    <a class="category" href="#productos">Batimotos</a>
+    <a class="category" href="#productos">Batiala</a>
+    <a class="category" href="#productos">Batiaccesorios</a>
+  </nav>
 
   <main class="content">
     <section class="panel" id="productos" aria-labelledby="productos-heading">
       <h2 id="productos-heading">Productos</h2>
-
-      <h3>Batgarra</h3>
-      <img src="batgarra.jpg" alt="Imagen de productos" width="300" height="200" style="border: 1px solid #d2b301;">
-      
-      <h3>Batarang</h3>
-        <img src="batarang.jpg" alt="Imagen de productos" width="300" height="200" style="border: 1px solid #d2b301;">
-      
-      <h3>Batpistola</h3>
-        <img src="batpistola.jpg" alt="Imagen de productos" width="300" height="200" style="border: 1px solid #d2b301;">
-      
-        <h3>ETC...</h3>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="batgarra.jpg" alt="Batgarra táctica">
+          <h3>Batgarra</h3>
+          <p>Herramienta de precisión para movilidad urbana.</p>
+        </article>
+        <article class="product-card">
+          <img src="batarang.jpg" alt="Batarang">
+          <h3>Batarang</h3>
+          <p>Diseño aerodinámico de alto rendimiento.</p>
+        </article>
+        <article class="product-card">
+          <img src="batpistola.jpg" alt="Batpistola">
+          <h3>Batpistola</h3>
+          <p>Innovación Wayne Tech para cada misión.</p>
+        </article>
+      </div>
     </section>
 
     <section class="panel" id="quienes-somos" aria-labelledby="quienes-heading">
-      <h2 id="quienes-heading">Quiénes somos?</h2>
-      <p class="panel__placeholder"> Somos un conglomerado empresarial multinacional con sede en Gotham City. Fundada originalmente como una compañía mercantil en el siglo XVII por los antepasados de la familia Wayne, la corporación ha evolucionado hasta convertirse en una de las diez empresas de defensa y tecnología más grandes del mundo, liderada por su propietario mayoritario, Bruce Wayne.</p>
-      <div style="text-align: center;">
-        <img src="Bruce.jpg" alt="Bruce Wayne" width="90" height="120">
-        </div>
+      <h2 id="quienes-heading">¿Quiénes somos?</h2>
+      <p class="panel__placeholder">Somos un conglomerado empresarial multinacional con sede en Gotham City. Fundada originalmente como una compañía mercantil en el siglo XVII por los antepasados de la familia Wayne, la corporación ha evolucionado hasta convertirse en una de las diez empresas de defensa y tecnología más grandes del mundo, liderada por su propietario mayoritario, Bruce Wayne.</p>
+      <div class="founder">
+        <img src="Bruce.jpg" alt="Retrato de Bruce Wayne">
+        <span>Bruce Wayne · Fundador</span>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>&copy; 2026 Wayne Tech. Todos los derechos reservados.</p>
   </footer>
-
 </body>
 </html>
