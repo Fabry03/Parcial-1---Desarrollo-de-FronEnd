@@ -6,52 +6,86 @@
   <title>Wayne Tech Enterprise</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
   <header class="topbar">
     <div class="brand">
-    <img src="logo.png" alt="Logo de Wayne Tech" width="70" height="50">
+      <img src="logo.png" alt="Logo de Wayne Tech" class="brand__logo">
       <h1 class="brand__name">Wayne Tech</h1>
     </div>
 
     <form class="search" role="search">
       <label for="search-input" class="sr-only">Buscar productos</label>
-      <input id="search-input" type="search" name="q" placeholder="Buscar">
-      <button type="submit" style="border: 1px solid #d2b301;">Buscar</button>
+      <input id="search-input" type="search" name="q" placeholder="Buscar...">
+      <button type="submit">Buscar</button>
     </form>
   </header>
 
-  <div class="categories" aria-label="Categorías de productos">
-    <a class="category" href="#batimoviles"style="border: 1px solid #d2b301;">Batimóviles</a>
-        <a class="category" href="#batimotos" style="border: 1px solid #d2b301;">Batimotos</a>
-    <a class="category" href="#batiala"style="border: 1px solid #d2b301;">Batiala</a>
-    <a class="category" href="#batiaccesorios"style="border: 1px solid #d2b301;">Batiaccesorios</a>
-  </div>
+  <nav class="categories" aria-label="Categorías de productos">
+    <a class="category" href="#batimoviles">Batimóviles</a>
+    <a class="category" href="#batimotos">Batimotos</a>
+    <a class="category" href="#batiala">Batiala</a>
+    <a class="category" href="#batiaccesorios">Batiaccesorios</a>
+  </nav>
 
   <main class="content">
+    
+    <!-- Columna 1: Productos (6 artículos en total) -->
     <section class="panel" id="productos" aria-labelledby="productos-heading">
       <h2 id="productos-heading">Productos</h2>
 
-      <h3>Batgarra</h3>
-      <img src="batgarra.jpg" alt="Imagen de productos" width="300" height="200" style="border: 1px solid #d2b301;">
-      
-      <h3>Batarang</h3>
-        <img src="batarang.jpg" alt="Imagen de productos" width="300" height="200" style="border: 1px solid #d2b301;">
-      
-      <h3>Batpistola</h3>
-        <img src="batpistola.jpg" alt="Imagen de productos" width="300" height="200" style="border: 1px solid #d2b301;">
-      
-        <h3>ETC...</h3>
+      <div class="products-list">
+        <article class="product-card">
+          <img src="batgarra.jpg" alt="Batgarra" class="product-card__img">
+          <h3>Batgarra</h3>
+        </article>
+
+        <article class="product-card">
+          <img src="batarang.jpg" alt="Batarang" class="product-card__img">
+          <h3>Batarang</h3>
+        </article>
+
+        <article class="product-card">
+          <img src="batpistola.jpg" alt="Batpistola" class="product-card__img">
+          <h3>Batpistola</h3>
+        </article>
+
+        <article class="product-card">
+          <img src="secuenciador criptografico.jpg" alt="Secuenciador Criptografico" class="product-card__img">
+          <h3>Secuenciador Criptografico</h3>
+        </article>
+
+        <article class="product-card">
+          <img src="carga electrica remota.png" alt="Carga Electrica Remota" class="product-card__img">
+          <h3>Carga Electrica Remota</h3>
+        </article>
+
+        <article class="product-card">
+          <img src="gel explosivo.png" alt="Gel Explosivo" class="product-card__img">
+          <h3>Gel Explosivo</h3>
+        </article>
+      </div>
     </section>
 
+    <!-- Columna 2: Quiénes somos -->
     <section class="panel" id="quienes-somos" aria-labelledby="quienes-heading">
-      <h2 id="quienes-heading">Quiénes somos?</h2>
-      <p class="panel__placeholder"> Somos un conglomerado empresarial multinacional con sede en Gotham City. Fundada originalmente como una compañía mercantil en el siglo XVII por los antepasados de la familia Wayne, la corporación ha evolucionado hasta convertirse en una de las diez empresas de defensa y tecnología más grandes del mundo, liderada por su propietario mayoritario, Bruce Wayne.</p>
-      <div style="text-align: center;">
-        <img src="Bruce.jpg" alt="Bruce Wayne" width="90" height="120">
+      <h2 id="quienes-heading">¿Quiénes somos?</h2>
+      
+      <div class="about-container">
+        <p class="panel__placeholder">
+          Somos un conglomerado empresarial multinacional con sede en Gotham City. 
+          Fundada originalmente como una compañía mercantil en el siglo XVII por los antepasados 
+          de la familia Wayne, la corporación ha evolucionado hasta convertirse en una de las diez 
+          empresas de defensa y tecnología más grandes del mundo, liderada por su propietario 
+          mayoritario, Bruce Wayne.
+        </p>
+        <div class="profile-frame">
+          <img src="Bruce.jpg" alt="Bruce Wayne" class="profile-img">
+          <span class="profile-caption">Bruce Wayne — CEO</span>
         </div>
+      </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
