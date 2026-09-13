@@ -38,5 +38,4 @@ Flexbox se eligió para alinear elementos en una sola dirección, distribuir el 
 
 ## Autores
 
-Gabriela Morales Cancino - T00083372
-César Fabricio Salas Ricaurte - T00065846
+Gabriela Morales Cancino - T00083372 y César Fabricio Salas Ricaurte - T00065846
