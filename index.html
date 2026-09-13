@@ -7,59 +7,90 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header class="topbar">
     <div class="brand">
-      <img src="logo.png" alt="Logo de Wayne Tech" width="70" height="50">
+      <img src="logo.png" alt="Logo de Wayne Tech" class="brand__logo">
       <h1 class="brand__name">Wayne Tech</h1>
     </div>
+
     <form class="search" role="search">
       <label for="search-input" class="sr-only">Buscar productos</label>
-      <input id="search-input" type="search" name="q" placeholder="Buscar equipo táctico">
+      <input id="search-input" type="search" name="q" placeholder="Buscar...">
       <button type="submit">Buscar</button>
     </form>
   </header>
 
   <nav class="categories" aria-label="Categorías de productos">
-    <a class="category" href="#productos">Batimóviles</a>
-    <a class="category" href="#productos">Batimotos</a>
-    <a class="category" href="#productos">Batiala</a>
-    <a class="category" href="#productos">Batiaccesorios</a>
+    <a class="category" href="#batimoviles">Batimóviles</a>
+    <a class="category" href="#batimotos">Batimotos</a>
+    <a class="category" href="#batiala">Batiala</a>
+    <a class="category" href="#batiaccesorios">Batiaccesorios</a>
   </nav>
 
   <main class="content">
+    
+    <!-- Columna 1: Productos (6 artículos en total) -->
     <section class="panel" id="productos" aria-labelledby="productos-heading">
       <h2 id="productos-heading">Productos</h2>
-      <div class="product-grid">
+
+      <div class="products-list">
         <article class="product-card">
-          <img src="batgarra.jpg" alt="Batgarra táctica">
+          <img src="batgarra.jpg" alt="Batgarra" class="product-card__img">
           <h3>Batgarra</h3>
-          <p>Herramienta de precisión para movilidad urbana.</p>
         </article>
+
         <article class="product-card">
-          <img src="batarang.jpg" alt="Batarang">
+          <img src="batarang.jpg" alt="Batarang" class="product-card__img">
           <h3>Batarang</h3>
-          <p>Diseño aerodinámico de alto rendimiento.</p>
         </article>
+
         <article class="product-card">
-          <img src="batpistola.jpg" alt="Batpistola">
+          <img src="batpistola.jpg" alt="Batpistola" class="product-card__img">
           <h3>Batpistola</h3>
-          <p>Innovación Wayne Tech para cada misión.</p>
+        </article>
+
+        <article class="product-card">
+          <img src="secuenciador criptografico.jpg" alt="Secuenciador Criptografico" class="product-card__img">
+          <h3>Secuenciador Criptografico</h3>
+        </article>
+
+        <article class="product-card">
+          <img src="carga electrica remota.png" alt="Carga Electrica Remota" class="product-card__img">
+          <h3>Carga Electrica Remota</h3>
+        </article>
+
+        <article class="product-card">
+          <img src="gel explosivo.png" alt="Gel Explosivo" class="product-card__img">
+          <h3>Gel Explosivo</h3>
         </article>
       </div>
     </section>
 
+    <!-- Columna 2: Quiénes somos -->
     <section class="panel" id="quienes-somos" aria-labelledby="quienes-heading">
       <h2 id="quienes-heading">¿Quiénes somos?</h2>
-      <p class="panel__placeholder">Somos un conglomerado empresarial multinacional con sede en Gotham City. Fundada originalmente como una compañía mercantil en el siglo XVII por los antepasados de la familia Wayne, la corporación ha evolucionado hasta convertirse en una de las diez empresas de defensa y tecnología más grandes del mundo, liderada por su propietario mayoritario, Bruce Wayne.</p>
-      <div class="founder">
-        <img src="Bruce.jpg" alt="Retrato de Bruce Wayne">
-        <span>Bruce Wayne · Fundador</span>
+      
+      <div class="about-container">
+        <p class="panel__placeholder">
+          Somos un conglomerado empresarial multinacional con sede en Gotham City. 
+          Fundada originalmente como una compañía mercantil en el siglo XVII por los antepasados 
+          de la familia Wayne, la corporación ha evolucionado hasta convertirse en una de las diez 
+          empresas de defensa y tecnología más grandes del mundo, liderada por su propietario 
+          mayoritario, Bruce Wayne.
+        </p>
+        <div class="profile-frame">
+          <img src="Bruce.jpg" alt="Bruce Wayne" class="profile-img">
+          <span class="profile-caption">Bruce Wayne — CEO</span>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <p>&copy; 2026 Wayne Tech. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
